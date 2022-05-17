@@ -1,5 +1,5 @@
 # Projeto Apeperia
 
-Arquivos do projeto apeperia, focados na acessibilidade.
+Arquivos do projeto apeperia, focados em layout responsivo.
 
-Link: https://kalebeccs.github.io/learning/acessibilidade-web/apeperia/index.html
+Link: https://kalebeccs.github.io/learning/layouts-responsivos/apeperia/index.html
