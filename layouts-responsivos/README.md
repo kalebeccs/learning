@@ -1,4 +1,5 @@
 # Projeto Apeperia
-Arquivos do projeto para a Apeperia.
 
-Prototipo: https://www.figma.com/file/FidBn9f7BoBCoEs19EzbUD/Apeperia-Mobile-First?node-id=0%3A1
+Arquivos do projeto apeperia, focados na acessibilidade.
+
+Link: https://kalebeccs.github.io/learning/Acessibilidade%20web/apeperia/index.html
