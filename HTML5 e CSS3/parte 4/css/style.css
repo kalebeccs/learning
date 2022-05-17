@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #0f0f0f;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	background: #BBBBBB;
+	background: linear-gradient(#808080, 10%,#BBBBBB);
+	padding: 20px 0;
+}
+
+main {
+	background: linear-gradient(lightgray, 5%, #FEFEFE, 95%, lightgray);
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #696969;
+	text-decoration: underline;
+}
+
+.produtos {
+	padding: 3em 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 10px;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #696969;
+}
+
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+.produtos li:hover h2 {
+	font-size: 2em;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url("../img/bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+select {
+	padding: 10px 25px;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: gray;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: #555555;
+	transform: scale(1.01);
+}
+
+table {
+	margin: 20px 0 40px;
+	box-shadow: 2px 2px 4px rgba(15, 15, 15, 0.5);
+	border-radius: 3px;
+}
+
+th {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 8px 15px;
+	border-bottom: 1px solid #000000;
+}
+
+td {
+	color: gray;
+	border-bottom: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+/*css da pagina inicial*/
+.banner {
+	width: 100%;
+}
+
+.titulo {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+	text-shadow: 1px 1px 2px rgba(15, 15, 15, 0.5);
+}
+
+.principal {
+	padding: 3em 0;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+	border-radius: 3px;
+	box-shadow: 2px 2px 4px rgba(15, 15, 15, 0.5);
+}
+
+.mapa {
+	padding: 3em 0;
+}
+
+.mapa p {
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+.beneficios {
+	padding: 3em 0;
+}
+
+.beneficios .conteudo {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.beneficios .lista {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "•";
+}
+
+.beneficios .imagem {
+	width: 60%;
+	box-shadow: 2px 2px 4px rgba(15, 15, 15, 0.5);
+	border-radius: 3px;
+}
+
+.beneficios .imagem:hover {
+	opacity: 0.95;
+	transition: 0.5s;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+	.caixa, .container, .beneficios .conteudo, .video, .produtos {
+		width: auto;
+	}
+
+	.container {
+		margin: 0 1em;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+		text-align: center;
+	}
+
+	.principal, .mapa, .beneficios {
+		padding: 1em 0;
+	}
+
+	.beneficios .lista, .beneficios .imagem {
+		width: 100%;
+	}
+
+	.beneficios .lista {
+		margin-bottom: 1em;
+	}
+
+	.produtos li {
+		width: 90%;
+		display: block;
+		margin: 1em auto;
+	}
+
+	.input-padrao, .enviar {
+		width: 80%;
+	}
+
+	.enviar {
+		margin: 0 auto;
+		display: block;
+	}
+
+	table {
+		margin: 1em auto 2em;
+	}
+}
