@@ -1,4 +1,29 @@
-#paineis-sobre {
+.cabecalho {
+    background-image: url(../img/castelo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.chamada {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: #FFF;
+    padding: 20px;
+    position: absolute;
+    width: 70%;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.chamada h1 {
+    margin-top: 0;
+}
+
+.sobre__panel {
     margin-top: 20px;
 }
 
@@ -26,8 +51,37 @@
     margin-top: 0;
 }
 
-footer {
+.rodape {
     background-color: #333;
     color: #FFF;
     padding-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .sobre {
+        margin-bottom: 20px;
+    }
+
+    .sobre__panel {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .chamada {
+        left: 0;
+        transform: translate(0, -80%);
+        width: 50%;
+    }
+
+    .chamada--margin {
+        position: relative;
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .video {
+        margin-bottom: 20px;
+    }
 }
