@@ -9,8 +9,30 @@
     <link rel="stylesheet" href="./assets/css/estilos.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-default container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-lista" aria-expanded="false">
+                    <span class="sr-only">Alterna Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">TopCasaFina Arquitetura</a>
+            </div>
+            <div class="collapse navbar-collapse" id="menu-lista">
+                <ul class="nav navbar-nav">
+                    <li><a href="#sobre-nos">Sobre nós</a></li>
+                    <li><a href="#nossos-projetos">Nossos projetos</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#video-institucional">Video</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main>
-        <section class="container">
+        <section id="sobre-nos" class="container">
             <h2>Sobre nós</h2>
             <img src="./assets/img/empresa.jpg" alt="Duas pessoas mexendo em um notbook" class="img-responsive">
             <div class="panel-group" id="paineis-sobre">
@@ -50,7 +72,7 @@
             <h3>Mais de 300 prêmios em design e em conforto.</h3>
             <p>Mais de 5 milhões de clientes satisfeitos em todo o mundo.</p>
         </section>
-        <section class="container">
+        <section id="nossos-projetos" class="container">
             <h2>Nossos Projetos</h2>
             <figure class="thumbnail">
                 <img src="./assets/img/projetos/casa-castelo.png" alt="Casa Castelo">
@@ -88,7 +110,7 @@
                 </figcaption>
             </figure>
         </section>
-        <section>
+        <section id="depoimentos">
             <h2 class="container depoimentos__titulo">Depoimento de cliente</h2>
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -134,13 +156,13 @@
                 </a>
             </div>
         </section>
-        <section class="container">
+        <section id="video-institucional" class="container">
             <h2>Video Institucional</h2>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/i_3Pv1AygeI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
-        <section class="contato container">
+        <section id="contato" class="contato container">
             <h2>Contato</h2>
             <p>Entre em contato conosco</p>
             <form action="">
