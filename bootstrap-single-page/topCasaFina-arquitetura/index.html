@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header>
-
-    </header>
     <main>
         <section class="container">
             <h2>Sobre nós</h2>
@@ -91,10 +88,53 @@
                 </figcaption>
             </figure>
         </section>
+        <section>
+            <h2 class="container depoimentos__titulo">Depoimento de cliente</h2>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+              
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <figure class="item active">
+                        <img src="./img/depoimentos/projetos0.png" alt="">
+                        <figcaption class="carousel-caption">
+                            <h3>Yuri Padilha</h3>
+                            <p>Gostei muito e axei rápido o serviço.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="item">
+                        <img src="./img/depoimentos/projetos1.png" alt="">
+                        <figcaption class="carousel-caption">
+                            <h3>Fernando Stafaneni</h3>
+                            <p>Excelente trabalho.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="item">
+                        <img src="./img/depoimentos/projetos2.png" alt="">
+                        <figcaption class="carousel-caption">
+                            <h3>Caio Sauzas</h3>
+                            <p>Gostei, competência em primeiro lugar.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+              
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
     </main>
-    <footer>
-
-    </footer>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
 </body>
