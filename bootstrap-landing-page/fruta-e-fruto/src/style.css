@@ -1,0 +1,9 @@
+.carousel__img {
+    object-fit: cover;
+    object-position: 0 80%;
+    height: calc(60vh);
+}
+
+.carousel__titulo {
+    font-family: 'Pacifico', cursive;
+}
