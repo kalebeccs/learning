@@ -1,9 +1,43 @@
 .carousel__img {
     object-fit: cover;
     object-position: 0 80%;
-    height: calc(60vh);
+    height: 60vh
 }
 
 .carousel__titulo {
     font-family: 'Pacifico', cursive;
+}
+
+.chamada__titulo {
+    color: darkred;
+    font-family: 'Pacifico', cursive;
+}
+
+.menu__titulo {
+    color: darkred !important;
+    font-family: 'Pacifico', cursive;
+}
+
+.receitas__card {
+    border-color: darkred;
+    max-width: 18rem;
+}
+
+.receitas__img {
+    object-fit: cover;
+    height: 12rem;
+}
+
+.receitas__btn,
+.contato__btn {
+    background-color: darkred;
+    border-color: darkred;
+    color: white;
+}
+
+.receitas__btn:hover,
+.contato__btn:hover {
+    background-color: rgb(100, 0, 0);
+    border-color: rgb(100, 0, 0);
+    color: white;
 }
