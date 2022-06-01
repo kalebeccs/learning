@@ -7,68 +7,187 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Pagina Inicial</title>
     <style>
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
         body {
-            background: #f1f1f1;
+            background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
             font-family: 'Roboto', sans-serif;
+            min-height: 100vh;
         }
 
         .container {
             width: 90%;
             margin: 0 auto;
         }
-        .menu__lista {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            list-style: none;
+
+        .cabecalho {
+            padding: 2em 0;
+            text-align: center;
         }
 
-        .menu__item {
-            background: #fdfdfd;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border: 1px solid #dcdcdc;
-            border-radius: 5px;
+        .cabecalho__titulo {
+            font-size: 2em;
+            color: #FFFFFF;
+        }
+
+        .status {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .status:hover {
+            color: #dcdcdc;
+        }
+
+        main {
+            background-color: #fdfdfd;
+            border-radius: 10px;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        .menu__item a {
-            text-decoration: none;
-            font-size: 1.5rem;
-            color: #333333;
-        }
-
-        .menu__item:hover,
-        .menu__item:focus  {
-            border: 1px solid #A8A8A8;
+            padding: 2em;
+            width: auto;
         }
 
         .chamada {
-            margin: 3rem 0;
+            margin-bottom: 2em;
+        }
+
+        .chamada__texto {
+            text-align: center;
+            font-size: 1.25em;
+        }
+
+        .projetos {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .htmlcss__titulo,
+        .javascript__titulo {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-bottom: .5em;
+        }
+        
+        .htmlcss__lista,
+        .javascript__lista {
+            list-style-type: none;
+            background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+            border-radius: 5px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 1em 2em;
+        }
+
+        .htmlcss__link,
+        .javascript__link {
+            color: #fdfdfd;
+            text-decoration: none;
+            line-height: 30px;
+        }
+        
+        .htmlcss__link:hover,
+        .javascript__link:hover {
+            color: #dcdcdc;
+            text-decoration: underline;
+        }
+
+        .rodape {
+            padding: 2em 0;
+            text-align: center;
+            color: #dcdcdc;
+        }
+
+        @media screen and (max-width: 768px) {
+            .chamada__texto {
+                text-align: left;
+            }
+
+            .projetos {
+                flex-direction: column;
+            }
+
+            .htmlcss__lista,
+            .javascript__lista {
+                padding: 1em;
+            }
+
+            .htmlcss__lista {
+                margin-bottom: .75em;
+            }
         }
     </style>
 </head>
 <body class="container">
     <header class="cabecalho">
-        <nav class="menu">
-            <ul class="menu__lista">
-                <li class="menu__item"><a href="#">Pagina Inicial</a></li>
-                <li class="menu__item"><a href="./acessibilidade-web/apeperia/index.html">Acessibilidade Web</a></li>
-                <li class="menu__item"><a href="./css-grid/alura-store/index.html">CSS Grid</a></li>
-                <li class="menu__item"><a href="./css-flexbox/alurinha/index.html">Flexbox</a></li>
-                <li class="menu__item"><a href="./html5-e-css3/parte-4/html/index.html">HTML5 e CSS3</a></li>
-                <li class="menu__item"><a href="./layouts-responsivos/apeperia/index.html">Layouts Responsivos</a></li>
-            </ul>
-        </nav>
+        <h1 class="cabecalho__titulo">KalebeCCS is <span class="status">Learning</span></h1>
     </header>
-    <body>
+    <main>
         <section class="chamada">
-            <h1>Learning</h1>
-            <p>Repositorio onde encontrar projetos que estou desenvolvendo durante meus estudos</p>
+            <h2 class="chamada__titulo"></h2>
+            <p class="chamada__texto">Repositorio onde encontrar projetos que estou desenvolvendo durante meus estudos</p>
         </section>
-    </body>
-    <footer>
-
+        <section class="projetos">
+            <div class="htmlcss">
+                <h2 class="htmlcss__titulo">HTML e CSS</h2>
+                <ul class="htmlcss__lista">
+                    <li class="htmlcss__item">
+                        <a href="./html5-e-css3/parte-4/html/index.html" class="htmlcss__link">html5-e-css3</a></li>
+                    <li class="htmlcss__item">
+                        <a href="./praticando-html-e-css/alura-plus/index.html" class="htmlcss__link">praticando-html-e-css</a></li>
+                    <li class="htmlcss__item">
+                        <a href="./bootstrap-single-page/topCasaFina-arquitetura/index.html" class="htmlcss__link">bootstrap-single-page</a></li>
+                    <li class="htmlcss__item">
+                        <a href="./bootstrap-landing-page/fruta-e-fruto/index.html" class="htmlcss__link">bootstrap-landing-page</a></li>
+                    <li class="htmlcss__item">
+                        <a href="./css-flexbox/alurinha/index.html" class="htmlcss__link">css-flexbox</a></li>
+                    <li class="htmlcss__item">
+                        <a href="./css-grid/alura-store/index.html" class="htmlcss__link">css-grid</a></li>
+                    <li class="htmlcss__item">
+                        <a href="./css-grid-e-flexbox/hzc/index.html" class="htmlcss__link">css-grid-e-flexbox</a></li>
+                    <li class="htmlcss__item">
+                        <a href="./css-arquitetura/fruta-fruto/index.html" class="htmlcss__link">css-arquitetura</a></li>
+                    <li class="htmlcss__item">
+                        <a href="./acessibilidade-web/apeperia/index.html" class="htmlcss__link">acessibilidade-web</a></li>
+                    <li class="htmlcss__item">
+                        <a href="./layouts-responsivos/apeperia/index.html" class="htmlcss__link">layouts-responsivos</a></li>
+                    <li class="htmlcss__item">
+                        <a href="./vetores-e-animacoes/praia-verao/index.html" class="htmlcss__link">vetores-e-animacoes</a></li>
+                </ul>
+            </div>
+            <div class="javascript">
+                <h2 class="javascript__titulo">Javascript</h2>
+                <ul class="javascript__lista">
+                    <li class="javascript__item">
+                        <a href="./javascript-introducao/aparecida-nutricionista/index.html" class="javascript__link">javascript-introducao</a></li>
+                    <li class="javascript__item">
+                        <a href="./javascript-para-web/alura-midi/index.html" class="javascript__link">javascript-para-web</a></li>
+                    <li class="javascript__item">
+                        <a href="./javascript-client-mvc/negociacoes/index.html" class="javascript__link">javascript-client-mvc</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <small>by KalebeCCS</small>
     </footer>
 </body>
 </html>
