@@ -1,0 +1,22 @@
+@import '../abstract/variaveis';
+
+.produto {
+    text-align: center;
+    margin: 4rem;
+    h3 {
+        text-transform: uppercase;
+        font-size: $tamanho-do-texto / 1.5;
+        font-weight: bold;
+        color: $cor-primaria;
+        margin-bottom: 1rem;
+    }
+    h4 {
+        font-size: $tamanho-do-texto / 2;
+        color: $cor-quaternaria;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: $tamanho-do-texto / 2.5;
+        line-height: 1.5rem;
+    }
+}
