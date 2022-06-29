@@ -9,27 +9,13 @@ body{
 
 header{
 	background-color: #333;
-	height: 3em;
 	color: #FFF;
 	margin-bottom: 1em;
 }
 
-header h1{
+.titulo{
 	font-size: 2em;
-	display:inline-block;
-	vertical-align:	middle;
-}
-header h2{
-	font-size: 2em;
-	display:inline-block;
-	vertical-align:	middle;
-}
-
-header .container:before{
-	content: '';
-	display:inline-block;
-	height: 100%;
-	vertical-align:	middle;
+	padding: .5em 0;
 }
 
 .container{
@@ -63,6 +49,7 @@ td, th {
 	margin: 0;
 	border: 1px solid #ccc;
 	text-align: center;
+	vertical-align: middle;
 }
 
 th{
@@ -111,7 +98,6 @@ button{
     display: block;
     clear: both;
     margin: 10px 0px;
-
 }
 
 button:active{
@@ -158,4 +144,36 @@ button[disabled=disabled], button:disabled {
 
 .invisivel {
 	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	header{
+		margin-bottom: 0;
+	}
+
+	.titulo{
+		text-align: center;
+	}
+
+	.container{
+		width: 90%;
+		margin: 0 auto 2em auto;
+	}
+
+	section h2{
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+
+	td, th {
+		padding: .7em 0;
+	}
+
+	button{
+		width: auto;
+	}
+
+	.grupo{
+		width: 100%;
+	}
 }
