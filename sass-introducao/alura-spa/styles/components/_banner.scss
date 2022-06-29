@@ -23,3 +23,12 @@
         }
     }
 }
+
+@media screen and (max-width: $tablet-width) {
+    .banner {
+        padding: 0 1rem;
+        .inner-banner {
+            padding: 2rem;
+        }
+    }
+}

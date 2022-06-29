@@ -22,6 +22,15 @@ nav ul li a:hover {
   border-bottom: 2px solid #FFCEAD;
 }
 
+@media screen and (max-width: 768px) {
+  li {
+    padding: 1rem .5rem !important;
+  }
+  li a {
+    font-size: .875rem;
+  }
+}
+
 .banner {
   background-image: url(../imagens/banner.jpeg);
   min-height: 350px;
@@ -55,6 +64,15 @@ nav ul li a:hover {
   color: #C449C2;
 }
 
+@media screen and (max-width: 768px) {
+  .banner {
+    padding: 0 1rem;
+  }
+  .banner .inner-banner {
+    padding: 2rem;
+  }
+}
+
 .servicos {
   margin: 80px;
 }
@@ -85,7 +103,7 @@ nav ul li a:hover {
 }
 
 .servicos .cards .card {
-  width: 360px;
+  max-width: 360px;
   text-align: center;
 }
 
@@ -113,6 +131,31 @@ nav ul li a:hover {
   max-width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .servicos {
+    margin: 2rem 1rem;
+  }
+  .servicos h4 {
+    margin-bottom: 2rem;
+  }
+  .servicos .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .cards {
+    gap: 1rem;
+  }
+}
+
 .cupom {
   background-color: #FFF5AB;
   padding: 4rem;
@@ -130,7 +173,7 @@ nav ul li a:hover {
 
 .cupom .input {
   margin: 0 auto;
-  width: 575px;
+  max-width: 575px;
   border-radius: 20px;
   border: 4px solid white;
   background-color: white;
@@ -140,7 +183,7 @@ nav ul li a:hover {
   border-radius: 20px;
   height: 40px;
   border: none;
-  width: 540;
+  max-width: 540px;
   outline: none;
   text-align: center;
   font-size: 26px;
@@ -175,9 +218,22 @@ nav ul li a:hover {
   border-color: #C449C2;
 }
 
+@media screen and (max-width: 768px) {
+  .cupom {
+    padding: 2rem 1rem;
+  }
+  .cupom input {
+    width: 100%;
+  }
+}
+
 .produto {
   text-align: center;
   margin: 4rem;
+}
+
+.produto img {
+  max-width: 100%;
 }
 
 .produto h3 {
@@ -199,6 +255,12 @@ nav ul li a:hover {
   line-height: 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .produto {
+    margin: 2rem 1rem;
+  }
+}
+
 footer {
   text-align: center;
   font-size: 1.5rem;
@@ -211,5 +273,12 @@ footer {
 
 footer i {
   color: red;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 1.2rem 1rem;
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

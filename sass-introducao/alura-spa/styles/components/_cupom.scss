@@ -13,7 +13,7 @@
     }
     .input {
         margin: 0 auto;
-        width: 575px;
+        max-width: 575px;
         border-radius: 20px;
         border: 4px solid white;
         background-color: white;
@@ -21,7 +21,7 @@
             border-radius: 20px;
             height: 40px;
             border: none;
-            width: 540;
+            max-width: 540px;
             outline: none;
             text-align: center;
             font-size: 26px;
@@ -50,6 +50,15 @@
             color: $cor-quaternaria;
             background-color: $cor-terciaria;
             border-color: $cor-quaternaria;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-width) {
+    .cupom {
+        padding: 2rem 1rem;
+        input {
+            width: 100%;
         }
     }
 }

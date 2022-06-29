@@ -18,3 +18,12 @@ nav {
         }
     }
 }
+
+@media screen and (max-width: $tablet-width) {
+    li {
+        padding: 1rem .5rem !important;
+        a {
+            font-size: .875rem;
+        }
+    }
+}
