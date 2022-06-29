@@ -48,11 +48,14 @@ p {
   
 }
 
+.section-dicas {
+    overflow: hidden;
+}
+
 .container-cards {
     width: 80%;
     margin: auto;
     display: flex;
-
 }
 
 .card {
@@ -95,4 +98,25 @@ p {
       to {
           stroke-dashoffset: 0;
       }
+}
+
+@media screen and (max-width: 768px) {
+    .section-dicas {
+        padding: 0 1rem;
+    }
+
+    .section-dicas h1 {
+        font-size: 2rem;
+    }
+
+    .container-cards {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        box-sizing: border-box;
+        width: 90%;
+    }
 }
