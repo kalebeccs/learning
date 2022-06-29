@@ -94,7 +94,7 @@ button{
 	color: #fff;
 	background-color:#0c8cd3;
 	border-color: #04324c;
-	width: 20%;
+	min-width: 20%;
     display: block;
     clear: both;
     margin: 10px 0px;
@@ -146,6 +146,12 @@ button[disabled=disabled], button:disabled {
 	display: none;
 }
 
+@media screen and (max-width: 1024px) {
+	.grupo{
+		width: 49.5%;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	header{
 		margin-bottom: 0;
@@ -167,10 +173,6 @@ button[disabled=disabled], button:disabled {
 
 	td, th {
 		padding: .7em 0;
-	}
-
-	button{
-		width: auto;
 	}
 
 	.grupo{
