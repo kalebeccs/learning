@@ -1,0 +1,23 @@
+h1 {
+    margin: 2rem 0;
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+.tabela-negociacao {
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid lightgray;
+    }
+
+    th {
+        padding: 8px 0 !important;
+        text-align: center;
+    }
+}
