@@ -65,3 +65,21 @@ h1 {
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
 }
+
+@media screen and (max-width: 768px) {
+  .tecla {
+    height: 100px;
+    font-size: 1.5em;
+    line-height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .tecla {
+    height: 80px;
+    font-size: 1.25em;
+    line-height: 80px;
+    width: 80px;
+  }
+}
