@@ -1,35 +1,31 @@
 *{
 	box-sizing: border-box;
- }
+}
 
 body{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 }
 
-header{
+.cabecalho{
 	background-color: #333;
 	color: #FFF;
-	margin-bottom: 1em;
 }
 
-.titulo{
+.cabecalho__titulo{
 	font-size: 2em;
 	padding: .5em 0;
+	width: 60%;
+	margin: 0 auto;
 }
 
 .container{
 	width: 60%;
-	height: 100%;
-	margin: 0 auto;
-}
-
-section{
-	margin: 2em 0;
+	margin: 2em auto;
 	overflow: hidden;
 }
 
-section h2{
+.container__titulo{
 	font-size: 3em;
 	display: block;
 	padding-bottom: .5em;
@@ -37,14 +33,14 @@ section h2{
 	margin-bottom: .5em;
 }
 
-table{
+.tabela{
 	width: 100%;
 	margin-bottom : .5em;
     table-layout: fixed;
 
 }
 
-td, th {
+.paciente td, .tabela__titulo {
 	padding: .7em;
 	margin: 0;
 	border: 1px solid #ccc;
@@ -52,12 +48,12 @@ td, th {
 	vertical-align: middle;
 }
 
-th{
+.tabela__titulo{
 	font-weight: bold;
 	background-color: #EEE;
 }
 
-label{
+.formulario__label{
 	color: #555;
 	display: block;
 	margin-bottom: .2em;
@@ -77,13 +73,13 @@ label{
 	padding-right: .5em;
 }
 
-.grupo{
+.formulario__field{
 	width: 32%;
 	display: inline-block;
 	padding: 10px 0px;
 }
 
-button{
+.botao{
 	padding: .5em 2em;
 	border: 0;
 	border-bottom: 3px solid;
@@ -100,12 +96,12 @@ button{
     margin: 10px 0px;
 }
 
-button:active{
+.botao:active{
 	margin-top:0px;
 	border: 0;
 }
 
-button[disabled=disabled], button:disabled {
+.botao[disabled=disabled], .botao:disabled {
     background-color: gray;
 	border-color: darkgray;
 
@@ -147,17 +143,18 @@ button[disabled=disabled], button:disabled {
 }
 
 @media screen and (max-width: 1024px) {
-	.grupo{
+	.formulario__field{
 		width: 49.5%;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	header{
-		margin-bottom: 0;
+	.cabecalho{
+		margin-bottom: 2em;
 	}
 
-	.titulo{
+	.cabecalho__titulo{
+		width: 100%;
 		text-align: center;
 	}
 
@@ -166,16 +163,16 @@ button[disabled=disabled], button:disabled {
 		margin: 0 auto 2em auto;
 	}
 
-	section h2{
+	.container__titulo{
 		font-size: 1.5em;
 		font-weight: 700;
 	}
 
-	td, th {
+	.paciente td, .tabela__titulo {
 		padding: .7em 0;
 	}
 
-	.grupo{
+	.formulario__field{
 		width: 100%;
 	}
 }

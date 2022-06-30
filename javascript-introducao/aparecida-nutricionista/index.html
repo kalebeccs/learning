@@ -5,31 +5,27 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Aparecida Nutrição</title>
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/index.css">
-
+		<link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	</head>
 	<body>
-
-		<header>
-			<div class="container">
-				<h1 class="titulo">Aparecida Nutrição</h1>
-			</div>
+		<header class="cabecalho">
+			<h1 class="cabecalho__titulo">Aparecida Nutrição</h1>
 		</header>
 		<main>
 			<section class="container">
-				<h2>Meus pacientes</h2>
-				<label for="filtrar-tabela">Filtro:</label>
+				<h2 class="container__titulo">Meus pacientes</h2>
+				<label class="formulario__label" for="filtrar-tabela">Filtro:</label>
 				<input type="text" name="filtro" id="filtrar-tabela">
-				<table>
+				<table class="tabela">
 					<thead>
 						<tr>
-							<th>Nome</th>
-							<th>Peso (kg)</th>
-							<th>Altura (m)</th>
-							<th>Gordura Corporal (%)</th>
-							<th>IMC</th>
+							<th class="tabela__titulo">Nome</th>
+							<th class="tabela__titulo">Peso (kg)</th>
+							<th class="tabela__titulo">Altura (m)</th>
+							<th class="tabela__titulo">Gordura Corporal (%)</th>
+							<th class="tabela__titulo">IMC</th>
 						</tr>
 					</thead>
 					<tbody id="tabela-pacientes">
@@ -40,7 +36,6 @@
 							<td class="info-gordura">10</td>
 							<td class="info-imc">0</td>
 						</tr>
-
 						<tr class="paciente" >
 							<td class="info-nome">João</td>
 							<td class="info-peso">80</td>
@@ -48,7 +43,6 @@
 							<td class="info-gordura">40</td>
 							<td class="info-imc">0</td>
 						</tr>
-
 						<tr class="paciente" >
 							<td class="info-nome">Erica</td>
 							<td class="info-peso">54</td>
@@ -56,7 +50,6 @@
 							<td class="info-gordura">14</td>
 							<td class="info-imc">0</td>
 						</tr>
-
 						<tr class="paciente">
 							<td class="info-nome">Douglas</td>
 							<td class="info-peso">85</td>
@@ -73,37 +66,36 @@
 						</tr>
 					</tbody>
 				</table>
-				<button id="buscar-pacientes" class="botao bto-principal">Buscar Pacientes</button>
+				<button id="buscar-pacientes" class="botao">Buscar Pacientes</button>
 			</section>
 			<section class="container">
-				<h2 id="titulo-form">Adicionar novo paciente</h2>
+				<h2 class="container__titulo">Adicionar novo paciente</h2>
 				<ul id="mensagens-erro"></ul>
 				<form id="form-adiciona">
-					<div class="grupo">
-						<label for="nome">Nome:</label>
+					<fieldset class="formulario__field">
+						<label class="formulario__label" for="nome">Nome:</label>
 						<input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
-					</div>
-					<div class="grupo">
-						<label for="peso">Peso:</label>
+					</fieldset>
+					<fieldset class="formulario__field">
+						<label class="formulario__label" for="peso">Peso:</label>
 						<input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
-					</div>
-					<div class="grupo">
-						<label for="altura">Altura:</label>
+					</fieldset>
+					<fieldset class="formulario__field">
+						<label class="formulario__label" for="altura">Altura:</label>
 						<input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
-					</div>
-					<div class="grupo">
-						<label for="gordura">% de Gordura:</label>
+					</fieldset>
+					<fieldset class="formulario__field">
+						<label class="formulario__label" for="gordura">% de Gordura:</label>
 						<input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
-					</div>
-
-					<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+					</fieldset>
+					<button id="adicionar-paciente" class="botao">Adicionar</button>
 				</form>
 			</section>
 		</main>
-		<script src="js/calcula-imc.js"></script>
-		<script src="js/form.js"></script>
-		<script src="js/remove-paciente.js"></script>
-		<script src="js/filtra.js"></script>
-		<script src="js/buscar-pacientes.js"></script>
+		<script src="./assets/js/calcula-imc.js"></script>
+		<script src="./assets/js/form.js"></script>
+		<script src="./assets/js/remove-paciente.js"></script>
+		<script src="./assets/js/filtra.js"></script>
+		<script src="./assets/js/buscar-pacientes.js"></script>
 	</body>
 </html>
