@@ -32,6 +32,7 @@ form.addEventListener('submit', (event) => {
 
     nome.value = '';
     quantidade.value = '';
+    nome.focus();
 });
 
 function criaElemento(item) {
