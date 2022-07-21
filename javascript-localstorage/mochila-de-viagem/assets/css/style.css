@@ -81,6 +81,17 @@ body {
     font-weight: 400;
 }
 
+.item button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #40112D;
+    color: #FFFFFF;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 1024px) {
     .conteudo {
         padding: 3rem 2rem;
